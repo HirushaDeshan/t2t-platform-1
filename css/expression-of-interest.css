@@ -1,0 +1,213 @@
+/*description section*/
+.description-text-2 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #070d20;
+  margin-bottom: 1rem;
+}
+/*end*/
+
+.add-project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-project-form {
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-project-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.add-project-form .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.add-project-form label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-project-form input,
+.add-project-form textarea {
+  width: 100%;
+  padding: 15px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.add-project-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.add-project-form input[type="number"]::-webkit-outer-spin-button,
+.add-project-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.add-project-form .submit-button {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.add-project-form .submit-button:hover {
+  background-color: #005ae6;
+}
+
+.add-project-form .form-group.full-width {
+  width: 100%;
+}
+
+/* Header section */
+.header-image-container {
+  max-height: 300px; /* add max-height */
+}
+
+.hidden-section {
+  display: none;
+  align-content: center;
+  text-align: center;
+  color: #005ae6;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-dots {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+
+/* Responsive design */
+@media screen and (min-width: 768px) {
+  .add-project-form {
+    margin-top: 0px;
+  }
+
+  .add-project-form .form-group {
+    width: calc(50% - 10px);
+  }
+
+  .add-project-form .form-group.full-width {
+    width: 100%;
+  }
+}
+
+
+
+/* Style for the select element */
+.form-group select {
+  width: 100%; /* Make the select element take the full width of its container */
+  padding: 10px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #fff; /* Set the background color */
+  font-size: 16px; /* Adjust the font size */
+}
+
+/* Style for the select options */
+.form-group select option {
+  font-size: 16px; /* Adjust the font size for options */
+}
+
+/* Style for the label */
+.form-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the form group container */
+.form-group-topic {
+ /* Center the content */
+  margin-bottom: 5px; /* Add spacing at the bottom */
+}
+
+/* Style for the label */
+.form-group-topic label {
+  font-size: 18px; /* Adjust the font size */
+  font-weight: bold;
+}
+
+/* Add extra spacing between label and other elements, if needed */
+.form-group-topic label {
+  margin-bottom: 2px;
+}
+
+
+
+
+.add-project-container input[type="file"] + label {
+  background-color: #0077ff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 10px 20px; /* Add padding */
+  font-size: 18px; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  transition: background-color 0.2s ease-in-out; /* Add a hover effect */
+}
+
+.add-project-container input[type="file"] + label:hover {
+  background-color: #005ae6; /* Change background color on hover */
+}
+
+/* Style for the submit button */
+.add-project-container .submit-button {
+  background-color: #0077ff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 10px 20px; /* Add padding */
+  font-size: 18px; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  transition: background-color 0.2s ease-in-out; /* Add a hover effect */
+}
+
+.add-project-container .submit-button:hover {
+  background-color: #005ae6; /* Change background color on hover */
+}
+
+
+
+/* Style for the add-project-container section */
+.add-project-container {
+  text-align: center; /* Center the content */
+  margin: 20px; /* Add spacing around the container */
+}
+
+

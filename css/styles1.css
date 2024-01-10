@@ -233,21 +233,20 @@ body {
   height: 50px;
 }
 
-/* Projects section */
-.projects-section {
+/* Project section */
+.project-section {
   background-color: #f5f5f5;
   padding: 2rem;
   text-align: center;
 }
 
-.projects-section h1 {
+.project-section h1 {
   font-size: 3rem;
   color: #3a506b;
   margin-bottom: 1rem;
 }
 
-.projects-list {
-  /*ok - project-list*/
+.project-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -256,13 +255,12 @@ body {
   justify-content: center;
 }
 
-.project {
-  /*ok - project-list-item*/
+.project-list-item {
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin: 1rem;
-  padding: 1rem 0;
+  padding: 2rem 1rem;
   width: 250px;
   height: 400px;
   display: flex;
@@ -271,34 +269,34 @@ body {
 }
 
 .project-title {
-  /*ok - project-title*/
   font-size: 1.5rem;
   color: #1c2541;
-  margin-bottom: 1rem;
+  margin-bottom: auto;
   text-align: center;
 }
 
-.company-name {
+.company {
   font-size: 1.2rem;
   color: #5bc0be;
-  margin-bottom: 1rem;
+  margin-bottom: auto;
 }
 
-.project-goal {
+.goal {
   font-size: 1.2rem;
   color: #3a506b;
-  margin-bottom: 1rem;
+  margin-bottom: auto;
 }
 
-.project-requirements,
-.project-deadline {
+.duration,
+.minimumteam {
   font-size: 1rem;
   color: #3a506b;
   margin-bottom: 0.5rem;
 }
 
-.project-requirements i,
-.project-deadline i {
+.duration i,
+.minimumteam i {
+  margin-top: auto;
   margin-right: 0.5rem;
   color: #5bc0be;
 }
@@ -559,6 +557,39 @@ body {
   }
 }
 
+/*i added*/
+.contact-button {
+  margin: 0.5rem auto;
+  display: block; /* Ensures it's centered horizontally */
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #3a506b;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #5bc0be;
+}
+
+.contact-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.4);
+}
+
+.contact-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #0077ff;
+}
+
 /* drop down section */
 .dropdown {
   position: relative;
@@ -573,10 +604,11 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-/* 
-  .dropdown:hover .dropdown-content {
-      display: block;
-  } */
+
+/* Remove the hover effect from here */
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
 
 .dropdown-content a {
   color: black;

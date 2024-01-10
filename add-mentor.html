@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Menotor</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/add-mentor.css" />
+    <script src="js/globals.js"></script>
+  </head>
+
+    <body>
+        <header class="header">
+          <nav class="navbar">
+            <div class="navbar-logo"><a href="index.html">TRACE T2T</a></div>
+            <div class="navbar-links">
+              <a href="index.html" class="active">Home</a>
+              <li class="dropdown">
+                <a href="#" id="applyButton">Register</a>
+                <div class="dropdown-content">
+                    <a href="add-student.html">Register as a Student</a>
+                    <a href="add-mentor.html">Register as a Mentor</a>
+                </div>
+              </li>
+              <a href="view-projects.html">Apply Now</a>
+              <a href="add-project.html">Add Project</a>
+              <a href="index.html#contact-us" class="active">Contact Us</a>
+              <a href="index.html#about-us" class="active">About Us</a>
+            </div>
+          </nav>
+            <div class="header-image-container">
+              <img
+                src="images/mentor-2.jpg"
+                alt="Tech Projects"
+                class="header-image"
+              />
+              <div class="header-text-container">
+                <h1 class="header-title">Add Mentors</h1>
+              </div>
+            </div>
+          </header>
+        <section class="description">
+            <div class="description-container">
+                <div class="description-text-container">
+                <p class="description-text">
+                    By joining our mentorship program, 
+                    you can make a lasting impact on the next generation of talent. 
+                    Share your expertise and guide students in their journey to success. 
+                    Don't miss the opportunity to shape future professionals and 
+                    give back to your industry. Become a mentor today and help students
+                     learn, grow, and thrive, all while enriching your own professional journey. 
+                </p>
+                </div>
+            </div>
+        </section>
+        <section class="add-mentor-container">
+            <form class="add-mentor-form">
+                <div class="form-group full-width">
+                  <label for="nic">NIC Number:</label>
+                  <input type="text" id="nic " name="NIC" required /><section class="hidden-section">
+                    <p>
+                        Error: The NIC number you entered already exists. Please use a different NIC number.
+                    </p>
+                </section>
+                </div>
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="FName" required />
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="Lname" required />
+                </div>
+                <div class="form-group">
+                    <label for="mentor-mobile1">Mobile No 1:</label>
+                    <input type="number" id="mentor-mobile1" name="Mobile1" required />
+                </div>
+                <div class="form-group">
+                    <label for="mentor-mobile2">Mobile No 2:</label>
+                    <input type="number" id="mentor-mobile2" name="Mobile2"/>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Contact Email:</label>
+                    <input type="email" id="contact-email" name="Email" required />
+                </div> 
+                <div class="form-group">
+                    <label for="linkedin">Mentor's LinkedIn Profile:</label>
+                    <input type="url" id="linkedin" name="LinkedIn" />
+                </div>        
+                <div class="form-group full-width">
+                    <label for="company">Company/Organization:</label>
+                    <input type="text" id="company" name="Company" required ></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label for="industry">Mentor's Expertise/Industry:</label>
+                    <textarea id="industry" name="Industry" required ></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label for="interest-area">Areas of Mentorship Interest:</label>
+                    <textarea id="interest-area" name="Interest_Area" required ></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit" class="submit-button header-button">
+                    Submit
+                    </button>
+                    <span class="loading-dots">Please wait, submitting content</span>
+                </div>
+                        
+            </form>
+        </section>
+        <section class="hidden-section">
+          <p>
+            Thank you for submitting your Details! We will review it and get back to
+            you as soon as possible.
+          </p>
+          <p>
+            In the meantime, you can visit our
+            <a href="index.html">Home Page</a> for more information about the
+            platform services.
+          </p>
+        </section>
+        
+
+        <script src="js/add-mentor.js"></script>
+    </body>
+</html>

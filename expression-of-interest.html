@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Exppression of Interest</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/expression-of-interest.css" />
+    <script src="js/globals.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-logo"><a href="index.html">TRACE T2T</a></div>
+        <div class="navbar-links">
+          <a href="index.html" class="active">Home</a>
+          <li class="dropdown">
+            <a href="#" id="applyButton">Register</a>
+            <div class="dropdown-content">
+                <a href="add-student.html">Register as a Student</a>
+                <a href="add-mentor.html">Register as a Mentor</a>
+            </div>
+          </li>
+          <a href="view-projects.html">Apply Now</a>
+          <a href="add-project.html">Add Project</a>
+          <a href="index.html#contact-us" class="active">Contact Us</a>
+          <a href="index.html#about-us" class="active">About Us</a>
+        </div>
+      </nav>
+      <div class="header-image-container">
+        <img
+          src="https://images.unsplash.com/photo-1620365744528-88da1e08ac96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80"
+          alt="Tech Projects"
+          class="header-image"
+        />
+        <div class="header-text-container">
+          <h1 class="header-title">Exppression of Interest</h1>
+        </div>
+      </div>
+    </header>
+        <section class="description">
+            <div class="description-container">
+                <div class="description-text-container">
+                <p class="description-text">
+                    Thank you for your interest in reaching out to us. 
+                    We value your feedback, questions, and suggestions, 
+                    and we're here to assist you in any way we can. 
+                    Please don't hesitate to get in touch with us using 
+                    the following methods:
+                </p>
+                </div>
+            </div>
+        </section>
+  
+        <section class="description">
+          <div class="description-container">
+              <div class="description-text-container">
+              <p class="description-text-2" id="message"></p><br><br>
+              <p class="description-text">
+                Guidelines: This document outlines important information
+                 and instructions regarding the submission process. 
+                 It will help you ensure that your Expression of Interest
+                  (EOI) is complete and meets our requirements.
+              </p>
+              <p class="description-text">
+                Sample Project Proposal: We have included a sample 
+                project proposal to give you an idea of what a 
+                well-structured proposal looks like. While it's 
+                not mandatory to follow this format, it can serve 
+                as a helpful reference when crafting your proposal.
+              </p>
+              <p class="description-text">
+                Please click on the links below to download these documents:
+              </p>
+              <p class="description-text">
+                <li><a href="docs\SampleGuide.pdf" download>Download Guidelines</a></li><br>
+                <li><a href="docs\sample.docx" download>Download Sample Project Proposal</a></li>
+              </p>
+              </div>
+          </div>
+        </section>
+          <section class="add-project-container">
+            <form id="uploadForm" class="add-project-form">
+              <input type="hidden" value="" name="fileContent" id="fileContent">
+              <input type="hidden" value="" name="filename" id="filename">
+              <input type="hidden" name="Project_Title" id="Project_Title" value="">
+              <div class="form-group">
+                <label>Student Name:</label>
+                <input required type="text" value="" name="Student_Name" id="Student_Name">
+              </div>
+              <div class="form-group">
+                <label>NIC Number:</label><input required type="text" value="" name="NIC_Number" id="NIC_Number">
+              </div>
+              <div class="form-group">
+                <label>Contact:</label><input required type="number" value="" name="Contact" id="Contact">
+              </div>
+              <div class="form-group">
+                <label>Team Name:</label><input required type="text" value="" name="Team_Name" id="Team_Name">
+              </div>
+              <div class="form-group">
+                <label>Email Address :</label><input required type="email" value="" name="Email_Address" id="Email_Address">
+              </div>
+              <div class="form-group full-width">
+                <div class="form-group-topic">
+                  <label for="projectTitle">Select the Members:</label>
+                </div>             
+              </div>             
+              <div class="form-group">
+                <label for="projectTitle">Member 1:</label>
+                <select class="form-control form-control-lg" id="member1Title" name="member1Title" required>
+                  <option value="" selected>Select a Student</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="projectTitle">Member 2:</label>
+                <select class="form-control form-control-lg" id="member2Title" name="member2Title" required>
+                  <option value="" selected>Select a Student</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="projectTitle">Member 3:</label>
+                <select class="form-control form-control-lg" id="member3Title" name="member3Title" required>
+                  <option value="" selected>Select a Student</option>
+                </select>
+              </div> 
+              <div class="form-group">
+                <label for="projectTitle">Member 4:</label>
+                <select class="form-control form-control-lg" id="member4Title" name="member4Title" required>
+                  <option value="" selected>Select a Student</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <div class="form-group-topic">
+                  <label for="projectTitle">Select a Mentor:</label>
+                </div>             
+              </div>            
+              <div class="form-group">
+                <label for="mentor">Mentor :</label>
+                <select class="form-control form-control-lg" id="mentor" name="mentor" required>
+                  <option value="" selected>Select a Mentor</option>
+                </select>
+              </div>
+            </form>
+          </section>
+          <section class="add-project-container">
+            <div>
+              <input class="btn btn-secondary btn-sm" required id="attach" name="attach" type="file" ></input>
+            </div>
+          </section>
+          <section class="add-project-container">
+            <input value="Submit" class="submit-button header-button" type="button"></input>         
+          </section>
+
+          <div class="loading-container">
+            <span class="loading-dots">Please wait, submitting content</span>
+          </div>
+          <section class="hidden-section">
+            <p>
+            Thank you for expressing your interest in our project! We have received your submission and will promptly
+            evaluate it.
+            </p>
+            <p>
+            While you await our response, feel free to explore our
+            <a href="index.html">Home Page</a> to learn more about the project and its offerings.
+            </p>
+          </section>
+          <script src="js/expression-of-interest.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>        
+        </body>
+      </html>

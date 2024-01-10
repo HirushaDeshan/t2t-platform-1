@@ -1,7 +1,15 @@
-const form = document.querySelector(".add-project-form");
-const hiddenSection = document.querySelector(".hidden-section");
+const form = document.querySelector(".add-mentor-form");
 const submitButton = form.querySelector(".submit-button");
 const loadingMessage = document.querySelector(".loading-dots");
+const errormessage = document.querySelector("#successMessage");
+const hiddenSections = document.querySelectorAll(".hidden-section");
+
+// Create separate constants for each hidden section
+const section1 = hiddenSections[0]; // Access the first hidden section
+const section2 = hiddenSections[1]; // Access the second hidden section
+
+// You can access more sections in a similar manner if you have more
+
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -17,9 +25,9 @@ form.addEventListener("submit", (event) => {
   const json = JSON.stringify(Object.fromEntries(formData.entries()));
   console.log(json);
 
-  // Make HTTP POST request to save project
+  // Make HTTP POST request to save mentor details
   fetch(
-    API_URL + "?action=add-project",
+    API_URL + "?action=add-mentor",
     {
       method: "POST",
       headers: {
@@ -30,19 +38,28 @@ form.addEventListener("submit", (event) => {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log("Project saved:", data);
-      hiddenSection.style.display = "block";
+      if (data.error) {
+        section2.style.display = "none";
+        console.log("Mentor Not saved:", data);
+        section1.style.display = "block";
+        submitButton.disabled = false;
+        loadingMessage.style.display = "none";      
+
+      }
+      else{
+        section1.style.display = "none";
+        console.log("Mentor saved:", data);
+        section2.style.display = "block";
+        submitButton.disabled = false;
+        loadingMessage.style.display = "none";
+        form.reset();
+      }
+      
     })
     .catch((error) => {
-      console.error("Error saving project:", error);
+      console.error("Error saving mentor:", error);
       // TODO: Handle error
-    })
-    .finally(() => {
-      // Re-enable submit button
-      submitButton.disabled = false;
-      loadingMessage.style.display = "none";
-      form.reset();
-    });
+    }) 
 });
 
 //dropdown display in apply now button

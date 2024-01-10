@@ -8,4 +8,6 @@ Title,Company,Goal,Tasks,Technology,Minimum Team,Date Added,Duration,Details Lin
 "E-commerce Platform","RetailHub", "Develop a platform for e-commerce", "1. Design UI 2. Implement features 3. Testing", "Angular, MongoDB", "4", "2023-09-24", "12 weeks", "http://retailhub.com/projects/ecom_platform", "555-7890", "ecommerce@retailhub.com", "Daniel Gray"
 "Fitness Tracker App","HealthFirst", "To help users track their fitness goals", "1. Develop UI 2. Implement features 3. Testing", "Swift, Core Data", "3", "2023-09-24", "9 weeks", "http://healthfirst.com/projects/fit_track", "555-8901", "fitness@healthfirst.com", "Nicole Purple"
 "Document Management System","OfficeSuite", "To manage documents effectively", "1. Develop UI 2. Implement features 3. User testing", "C#, SQL Server", "3", "2023-09-24", "8 weeks", "http://officesuite.com/projects/doc_mgmt", "555-9012", "documents@officesuite.com", "Robert Blue"
-"Online Learning Platform","LearnOnline", "To facilitate online learning", "1. Design UI 2. Create Courses 3. User Testing", "Django, PostgreSQL", "4", "2023-09-24", "10 weeks", "http://learnonline.com/projects/elearn_platform", "555-0123", "learning@learnonline.com", "Patricia Yellow"
+"Online Learning Platform","LearnOnline", "To facilitate online learning", "1. Design UI 2. Create Courses 3. User Testing", "Django, PostgreSQL", "4", "2023-09-24", "10 weeks", "http://learnonline.com/projects/elearn_platform", "555-0123", "learning@learnonline.com", "Patricia Yellow" 
+
+

@@ -19,7 +19,7 @@ form.addEventListener("submit", (event) => {
 
   // Make HTTP POST request to save project
   fetch(
-    API_URL + "?action=add-project",
+    API_URL + "?action=contact-us",
     {
       method: "POST",
       headers: {

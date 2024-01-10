@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <title>TRACE T2T - Bridging Learners and Employers</title>
     <link
@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles1.css" />
     <script src="js/globals.js"></script>
   </head>
   <body>
@@ -22,13 +23,22 @@
         <div class="navbar-logo"><a href="index.html">TRACE T2T</a></div>
         <div class="navbar-links">
           <a href="#" class="active">Home</a>
-          <a href="view-projects.html"> Projects</a>
-          <a href="add-project.html">Add New</a>
+          <li class="dropdown">
+            <a href="#" id="applyButton">Register</a>
+            <div class="dropdown-content">
+              <a href="add-student.html">Register as a Student</a>
+              <a href="add-mentor.html">Register as a Mentor</a>
+            </div>
+          </li>
+          <a href="view-projects.html">Apply Now</a>
+          <a href="add-project.html">Add Project</a>
+          <a href="#contact-us" class="active">Contact Us</a>
+          <a href="#about-us" class="active">About Us</a>
         </div>
       </nav>
       <div class="header-image-container">
         <img
-          src="https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+          src="images/header-image.jpg"
           alt="Tech Projects"
           class="header-image"
         />
@@ -48,6 +58,7 @@
           </div>
         </div>
       </div>
+      <script src="js/globals.js"></script>
     </header>
 
     <section class="description">
@@ -67,10 +78,7 @@
     <section class="benefits">
       <div class="benefit">
         <div class="benefit-image-container">
-          <img
-            src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1752&q=80"
-            alt="Students benefit image"
-          />
+          <img src="images/student.jpg" alt="Students benefit image" />
         </div>
         <div class="benefit-text-container">
           <h2><i class="fas fa-user-graduate"></i> Students</h2>
@@ -97,13 +105,9 @@
           >
         </div>
       </div>
-
       <div class="benefit">
         <div class="benefit-image-container">
-          <img
-            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-            alt="Companies benefit image"
-          />
+          <img src="images/company.jpg" alt="Companies benefit image" />
         </div>
         <div class="benefit-text-container">
           <h2><i class="fas fa-building"></i> Companies</h2>
@@ -134,66 +138,58 @@
         </div>
       </div>
     </section>
-    <section class="projects-section">
+
+    <section class="project-section">
       <h1>Recent Projects</h1>
-      <ul class="projects-list">
-        <li class="project">
-          <h3 class="project-title">Project Title</h3>
-          <p class="company-name">Company Name</p>
-          <p class="project-goal">Project Goal</p>
-          <p class="project-requirements">
-            Minimum number of students required: 3
-          </p>
-          <p class="project-deadline">Deadline: December 31, 2021</p>
-        </li>
-        <li class="project">
-          <h3 class="project-title">Project Title</h3>
-          <p class="company-name">Company Name</p>
-          <p class="project-goal">Project Goal</p>
-          <p class="project-requirements">
-            Minimum number of students required: 2
-          </p>
-          <p class="project-deadline">Deadline: January 15, 2022</p>
-        </li>
-        <li class="project">
-          <h3 class="project-title">Project Title</h3>
-          <p class="company-name">Company Name</p>
-          <p class="project-goal">Project Goal</p>
-          <p class="project-requirements">
-            Minimum number of students required: 3
-          </p>
-          <p class="project-deadline">Deadline: December 31, 2021</p>
-        </li>
-        <li class="project">
-          <h3 class="project-title">Project Title</h3>
-          <p class="company-name">Company Name</p>
-          <p class="project-goal">Project Goal</p>
-          <p class="project-requirements">
-            Minimum number of students required: 2
-          </p>
-          <p class="project-deadline">Deadline: January 15, 2022</p>
-        </li>
-        <!-- Add more projects here -->
+      <ul class="project-list">
+        <!-- Project list items added by JS -->
+        <span class="loading-dots">Please wait, loading projects</span>
       </ul>
-      <a href="view-projects.html" class="view-all-projects">View All Projects</a>
+      <a href="view-projects.html" class="view-all-projects"
+        >View All Projects</a
+      >
     </section>
-    <section class="about-us">
+    <script src="js/project-fetch.js"></script>
+
+    <section class="about-us" id="about-us">
       <div class="about-us-container">
         <h2>About Us</h2>
 
         <p>
-          Our mission is to create bridges between learners and companies, and to empower the next generation of IT professionals with the skills and experience they need to succeed in the workforce.
+          Our mission is to create bridges between learners and companies, and
+          to empower the next generation of IT professionals with the skills and
+          experience they need to succeed in the workforce.
         </p>
         <p>
-          This platform is brought to you by <a href="https://trace.lk" target="_blank"><span class="logo-text">TRACE</span></a> – Technologically Re-Awakening Culture of Excellence, is an organization that promotes collaboration, creativity, and entrepreneurship through technology and innovation across disciplines. TRACE aims to transform Sri Lanka into an innovation hub in South Asia. TRACE is set to elevate the technology ecosystem of Sri Lanka by providing an environment to power high-performance and proprietary technology designed and engineered in Sri Lanka for the wider world; thereby, facilitating innovation, growth, and collaboration for multidisciplinary talent. 
+          This platform is brought to you by
+          <a href="https://trace.lk" target="_blank"
+            ><span class="logo-text">TRACE</span></a
+          >
+          – Technologically Re-Awakening Culture of Excellence, is an
+          organization that promotes collaboration, creativity, and
+          entrepreneurship through technology and innovation across disciplines.
+          TRACE aims to transform Sri Lanka into an innovation hub in South
+          Asia. TRACE is set to elevate the technology ecosystem of Sri Lanka by
+          providing an environment to power high-performance and proprietary
+          technology designed and engineered in Sri Lanka for the wider world;
+          thereby, facilitating innovation, growth, and collaboration for
+          multidisciplinary talent.
         </p>
       </div>
+
+      <div class="header-buttons-container">
+        <a href="contact-us.html">
+          <button class="header-button" id="contact-us">Contact Us</button>
+        </a>
+      </div>
     </section>
+
     <footer class="footer">
       <p>
         &copy; 2023 TRACE. All Rights Reserved. |
         <i class="fas fa-envelope"></i> t2t@trace.lk
       </p>
     </footer>
+    <script src="js/drop-down.js"></script>
   </body>
 </html>
