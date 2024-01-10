@@ -24,9 +24,18 @@
       <nav class="navbar">
         <div class="navbar-logo"><a href="index.html">TRACE T2T</a></div>
         <div class="navbar-links">
-          <a href="index.html">Home</a>
-          <a href="view-projects.html">Projects</a>
-          <a href="add-project.html" class="active">Add New</a>
+          <a href="index.html" class="active">Home</a>
+          <li class="dropdown">
+            <a href="#" id="applyButton">Register</a>
+            <div class="dropdown-content">
+              <a href="add-student.html">Register as a Student</a>
+              <a href="add-mentor.html">Register as a Mentor</a>
+            </div>
+          </li>
+          <a href="view-projects.html">Apply Now</a>
+          <a href="add-project.html">Add Project</a>
+          <a href="index.html#contact-us" class="active">Contact Us</a>
+          <a href="index.html#about-us" class="active">About Us</a>
         </div>
       </nav>
       <div class="header-image-container">
@@ -108,7 +117,6 @@
           </button>
           <span class="loading-dots">Please wait, submitting content</span>
         </div>
-
       </form>
     </section>
     <section class="hidden-section">

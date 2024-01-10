@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View Students</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/view-projects.css" />
+    <link rel="stylesheet" href="css/view-mentors.css" />
+    <script src="js/globals.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-logo"><a href="index.html">TRACE T2T</a></div>
+        <div class="navbar-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="view-projects.html">Projects</a>         
+          <!-- <a href="view-students.html">Students</a> 
+          <a href="view-mentors.html">Mentors</a>  -->
+          <a href="view-projects.html">Apply for Project</a>
+          <a href="index.html#header-button" class="active">Contact Us</a>
+        </div>
+      </nav>
+      <div class="header-image-container">
+        <img
+          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Tech Projects"
+          class="header-image"
+        />
+        <div class="header-text-container">
+          <h1 class="header-title">View Mentors</h1>
+        </div>
+      </div>
+    </header>
+    
+    <section class="description">
+        <div class="description-container">
+            <div class="description-text-container">
+                <p class="description-text">
+                  As a student, you have the opportunity to explore 
+                  a wide range of exciting projects and collaborate with 
+                  top companies in the industry. Don't miss out on the 
+                  chance to gain valuable experience, build your portfolio, 
+                  and make meaningful connections in the industry. 
+                  Select your favorite projects and start bidding today!</p>
+            </div>
+        </div>
+    </section>
+    <div class="header-buttons-container">
+      <a href="add-mentor.html">
+        <button class="header-button">Add New Mentor</button>
+      </a>
+    </div>
+    <section class="projects">
+      <!-- Project list -->
+    <ul class="project-list">
+        <!-- Project list items added by JS -->
+        <span class="loading-dots">Please wait, loading projects</span>
+    </ul><br><br>
+
+    </section>
+
+    <div class="pagination">
+        <!-- Pagination controls will be dynamically added here -->
+    </div>
+    <script src="js/view-mentors.js"></script>
+  </body>
+</html>

@@ -1,137 +1,152 @@
 /* Style for search bar */
 .projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 90%;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 90%;
+  padding: 20px;
 }
 
 #search-bar {
-    margin: 20px 20px;
-    margin-top: 20px;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    outline: none;
+  margin: 20px 20px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
 }
 
 #search-bar:focus {
-    border-color: #007bff;
+  border-color: #007bff;
 }
 
 .search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style for project list */
 .project-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* Style for project list item */
 .project-list-item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f5f5f5;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  text-align: left;
 }
 
 /* Style for project title */
 .project-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .project-details {
-    display: table;
-    margin-top: 10px;
-    border-collapse: collapse;
+  display: table;
+  margin-top: 10px;
+  border-collapse: collapse;
 }
 
 .project-details div {
-    display: table-row;
+  display: table-row;
 }
 
-
 .project-details div span {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .project-details div span i {
-    display: table-cell;
-    padding: 10px;
-    font-weight: bold;
-    margin-right: 20px;
+  display: table-cell;
+  padding: 10px;
+  font-weight: bold;
+  margin-right: 20px;
 }
 
 .project-details div p {
-    display: table-cell;
-    padding: 5px;
+  display: table-cell;
+  padding: 5px;
 }
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-    .project-list-item {
-        flex-direction: column;
-        align-items: center;
-    }
+  .project-list-item {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .project-details {
-        display: block;
-        margin-top: 10px;
-    }
+  .project-details {
+    display: block;
+    margin-top: 10px;
+  }
 
-    .project-details div {
-        display: block;
-        margin-bottom: 10px;
-    }
+  .project-details div {
+    display: block;
+    margin-bottom: 10px;
+  }
 
-    .project-details div span i {
-        margin-bottom: 5px;
-    }
+  .project-details div span i {
+    margin-bottom: 5px;
+  }
 }
 
 /* Header section */
 .header-image-container {
-    max-height: 300px; /* add max-height */
+  max-height: 300px; /* add max-height */
 }
 
 /* Responsive design */
 @media screen and (min-width: 768px) {
+  #search-bar {
+    width: 40%;
+  }
 
-
-    #search-bar {
-        width: 40%;
-    }
-
-    .project-list {
-        width: 75%;
-    }
+  .project-list {
+    width: 75%;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  #search-bar {
+    width: 30%;
+  }
 
-    #search-bar {
-        width: 30%;
-    }
+  .project-list {
+    width: 75%;
+  }
+}
 
-    .project-list {
-        width: 75%;
-    }
+/* I added*/
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
 }

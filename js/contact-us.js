@@ -18,13 +18,16 @@ form.addEventListener("submit", (event) => {
   console.log(json);
 
   // Make HTTP POST request to save project
-  fetch(API_URL + "?action=add-project", {
-    method: "POST",
-    headers: {
-      "Content-Type": "text/plain;charset=utf-8",
-    },
-    body: json,
-  })
+  fetch(
+    API_URL + "?action=contact-us",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8",
+      },
+      body: json,
+    }
+  )
     .then((response) => response.json())
     .then((data) => {
       console.log("Project saved:", data);
@@ -43,23 +46,23 @@ form.addEventListener("submit", (event) => {
 });
 
 //dropdown display in apply now button
-document.addEventListener("DOMContentLoaded", function () {
-  const applyButton = document.getElementById("applyButton");
-  const dropdownContent = document.querySelector(".dropdown-content");
+document.addEventListener("DOMContentLoaded", function() {
+  const applyButton = document.getElementById('applyButton');
+  const dropdownContent = document.querySelector('.dropdown-content');
 
-  applyButton.addEventListener("click", function (event) {
-    event.stopPropagation(); // Prevent any other potential click events
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
+  applyButton.addEventListener('click', function(event) {
+      event.stopPropagation(); // Prevent any other potential click events
+      if (dropdownContent.style.display === 'block') {
+          dropdownContent.style.display = 'none';
+      } else {
+          dropdownContent.style.display = 'block';
+      }
   });
 
   // Hide dropdown if clicked outside
-  document.addEventListener("click", function (event) {
-    if (event.target !== applyButton) {
-      dropdownContent.style.display = "none";
-    }
+  document.addEventListener('click', function(event) {
+      if (event.target !== applyButton) {
+          dropdownContent.style.display = 'none';
+      }
   });
 });
